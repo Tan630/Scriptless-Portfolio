@@ -1,0 +1,62 @@
+
+    .contact-interceptor {
+        display: none;
+      }
+  
+      .subscribe-box * {
+        margin: 0.3em;
+      }
+  
+      .subcribe-box-title {
+        display: block;
+        width: 100%;
+      }
+  
+      ul {
+        padding-left: 0;
+      }
+      ul li {
+        list-style-position: inside;
+      }
+  
+      .contact-list__item{
+        margin : 0.6em;
+        
+      }
+    
+      
+      .contact-list__item--phone:before {
+        content: '\260e';
+      }
+      
+      .contact-list__item--email:before {
+        content: '\1f4e7';
+      }
+      .contact-list__item--fax:before {
+        content: '\1f5b7';
+      }
+      .contact-list__item--mail:before {
+        content: '\2709';
+      }
+  
+      .contact-list {
+        list-style-type: none;
+      }
+
+      .subscribe-box-input {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .subscribe-box-input--email {
+        padding: 1em;
+        display: block;
+        
+      }
+
+      
+      .subscribe-box-input--submit {
+        padding: 0.4em;
+        display: block;
+      }
+      

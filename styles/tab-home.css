@@ -1,0 +1,104 @@
+.article-title {
+    display: block;
+    user-select: none;
+    /*border-left: 0.5em solid #BBB;*/
+    box-shadow: inset 0.5em 0px 0px 0 #BBB;
+    padding-left: 0.5em;
+    
+    overflow: clip;
+    background-color: rgb(233,233,237);
+    
+    
+    transition: box-shadow 0.4s linear, background-color 0.4s linear;
+    /* border-bottom: 0.1em solid #ccc; */
+    
+  }
+
+  .article-title:hover{
+    background-color: #BBB;
+  }
+
+  .article-beacon:checked + .article-title:hover{
+    background-color: #CCC;
+  }
+
+  .article-title__content{
+    display: block;
+    margin: 0.5em;
+    margin-top: 0.7em;
+  }
+  
+  
+  
+  .article-title__indicator {
+    transform: rotate(0deg);
+    transition: transform 0.2s linear;
+    height: 1rem;
+  }
+  .article-beacon:checked + .article-title .article-title__indicator {
+    transform: rotate(90deg);
+  }
+  
+  .article-beacon:checked + .article-title {
+    border-left-width: 0.4em;
+    box-shadow: inset 0.4em 0px 0px 0 #CCC;
+    
+    
+    /* outline: solid 0.1rem red;
+    outline-offset: -1rem; */
+    
+  }
+  
+  .article-content {
+    border-bottom: 0.1em solid #ccc; 
+    border-left: 0.1em solid #ccc; 
+    
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    overflow: clip;
+    
+    min-height: 0;
+    height: 0;
+    transition: height 0.3s, border-color 0.1s linear 0.3s;
+    
+    /* transform:scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in;  */
+    border-bottom: 0.1em solid transparent; 
+  }
+
+  .article-beacon:checked + .article-title + .article-content {
+    /* transform:scaleY(1); */
+    height: 10em;
+    
+    border-bottom: 0.1em solid #CCC; 
+    transition: height 0.3s, border-color 0.1s linear;
+  }
+  
+  .article-content p {
+    margin-top: 0;
+  }
+
+  .article-title .article-content__bottom-border{
+    height: 0.1em;
+    width: 100%;
+    background-color: #BBB;
+    position: relative;
+    right: 0;
+    transition: right 0.4s, background-color 0.3s;
+  }
+  
+  .article-beacon:checked + .article-title .article-content__bottom-border{
+    
+    width: 100%;
+    
+    position: relative;
+    right: 110%;
+  }
+  
+  
+  
+  .article-beacon {
+    display: none;
+  }
